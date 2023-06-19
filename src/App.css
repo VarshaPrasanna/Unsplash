@@ -1,0 +1,94 @@
+
+  .app {
+  
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  body {
+    background-color: #e84118;
+  }
+  h1 {
+    text-align: center;
+    margin-top: 0; 
+  }
+
+
+  .search-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    &:hover > .search-txt {
+      width: 240px;
+      padding: 0 6px;
+    }
+    &:hover > .search-btn {
+      background-color: white;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  
+  .search-btn {
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #2f3640;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+  }
+  
+  .search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+  }
+
+  .input {
+    padding: 10px 20px;
+    }
+    .input > input {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px 20px;
+    }
+    
+    .card {
+    padding: 5px;
+    width: auto;
+    height: auto;
+    }
+    .output {
+    display: grid;
+    grid-column-gap: 5px;
+    grid-template-columns: auto auto auto;
+    width: auto;
+    height: auto;
+    }
+    .output > img {
+    flex-wrap: nowrap;
+    margin: 5px;
+    }
+  
